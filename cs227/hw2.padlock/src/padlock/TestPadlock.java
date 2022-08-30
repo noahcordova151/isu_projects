@@ -1,0 +1,15 @@
+package padlock;
+
+/**
+ * @author Noah Cordova
+ * 
+ * Class to test Padlock.java
+ */
+public class TestPadlock {
+
+	public static void main(String[] args) {
+		Padlock myPadlock = new Padlock(10,20,30);
+		System.out.println(myPadlock.getDiscPosition(1));
+	}
+
+}

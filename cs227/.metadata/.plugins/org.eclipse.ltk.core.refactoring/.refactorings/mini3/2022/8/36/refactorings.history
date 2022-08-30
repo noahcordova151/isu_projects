@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;MazeExplorer.java&apos; to &apos;mini3.maze_explorer/src/maze_explorer&apos;&#x0D;&#x0A;- Original project: &apos;mini3&apos;&#x0D;&#x0A;- Destination element: &apos;mini3.maze_explorer/src/maze_explorer&apos;&#x0D;&#x0A;- Original element: &apos;MazeExplorer.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move file" destination="=mini3.maze_explorer/src&lt;maze_explorer" element1="MazeExplorer.java" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1661870123763" units="0" version="1.0"/>
+</session>

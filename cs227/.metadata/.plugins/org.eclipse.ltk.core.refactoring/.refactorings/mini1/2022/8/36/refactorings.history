@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;LoopaholicsAnonymous.java&apos; to &apos;mini1.string_problems/src/string_problems&apos;&#x0D;&#x0A;- Original project: &apos;mini1&apos;&#x0D;&#x0A;- Destination element: &apos;mini1.string_problems/src/string_problems&apos;&#x0D;&#x0A;- Original element: &apos;LoopaholicsAnonymous.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move file" destination="=mini1.string_problems/src&lt;string_problems" element1="LoopaholicsAnonymous.java" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1661869781601" units="0" version="1.0"/>
+</session>

@@ -1,0 +1,150 @@
+package tv;
+
+/**
+ * A class representing a simple television 
+ * that that models simple aspects - channels and volume.
+ * @author Noah Cordova
+ */
+public class TV {
+	/**
+	 * Instance variable for increment to increase/decrease volume
+	 */
+	public static final double VOLUME_INCREMENT = 0.07;
+	
+	/**
+	 * Instance variable for volume
+	 */
+	private double volume;
+	
+	/**
+	 * Instance variable for channel
+	 */
+	private int channel;
+	
+	/**
+	 * Instance variable for the starting channel
+	 */
+	private int start;
+	
+	/**
+	 * Instance variable for the number of channels
+	 */
+	private int numChannels;
+	
+	/**
+	 * Instance variable for the previous channel
+	 */
+	private int previousChannel;
+	
+	/**
+	 * Constructs a new TV with channels givenStart through givenStart+givenNumChannels–1.
+	 * Initially the volume is 0.5 and the channel is equal to givenStart.
+	 * @param givenStart - start of channels
+	 * @param givenNumChannels - number of channels
+	 */
+	public TV(int givenStart, int givenNumChannels) {
+		volume = 0.5;
+		channel = givenStart;
+		start = givenStart;
+		numChannels = givenNumChannels;
+		previousChannel = givenStart;
+	}
+	
+	/**
+	 * Returns the current channel.
+	 * @return channel
+	 */
+	public int getChannel() {
+		return channel;
+	}
+	
+	/**
+	 * Returns the current volume.
+	 * @return volume
+	 */
+	public double getVolume() {
+		return volume;
+	}
+	
+	/**
+	 * Lowers the volume by VOLUME_INCREMENT, but not below 0.0
+	 */
+	public void volumeDown() {
+		double myVolume = volume - VOLUME_INCREMENT;
+		volume = Math.max(myVolume,0.0);
+	}
+	
+	/**
+	 * Raises the volume by VOLUME_INCREMENT, but not above 1.0
+	 */
+	public void volumeUp() {
+		double myVolume = volume + VOLUME_INCREMENT;
+		volume = Math.min(myVolume,1.0);
+	}
+	
+	/**
+	 * Changes the channel down by 1, wrapping around to start + numChannels-1 if the current channel is start.
+	 */
+	public void channelDown() {
+		previousChannel = channel;
+		channel = ((channel - 1 - start + numChannels) % numChannels) + start;
+	}
+	
+	/**
+	 * Changes the channel up by 1, wrapping around to start if the current channel is start + numChannels–1.
+	 */
+	public void channelUp() {
+		previousChannel = channel;
+		channel = ((channel + 1 - start) % numChannels) + start;
+	}
+	
+	/**
+	 * Sets the channel to the given channel number.
+	 * @param channelNumber - number of channel
+	 */
+	public void setChannel(int channelNumber) {
+		previousChannel = channel;
+		channel = Math.min(start + numChannels - 1, Math.max(channelNumber, start));
+	}
+	
+	/**
+	 * Sets the current channel to the most recent previous channel.
+	 */
+	public void goToPreviousChannel() {
+		//local variable previousChannelHolder temporarily stores the value of channel to assign to previousChannel
+		int previousChannelHolder = channel;
+		channel = previousChannel;
+		previousChannel = previousChannelHolder;
+	}
+	
+	/**
+	 * Resets this TV so that its available channels are now from givenStart through givenStart+numChannels–1.
+	 * @param givenStart - start of channels
+	 */
+	public void resetStart(int givenStart) {
+		start = givenStart;
+		channel = Math.min(start + numChannels - 1, Math.max(channel, givenStart));
+		previousChannel = Math.min(start + numChannels - 1, Math.max(previousChannel, start));
+	}
+	
+	/**
+	 * Resets this TV so that its available channels are now from start through start+givenNumChannels–1.
+	 * @param givenNumChannels - number of channels
+	 */
+	public void resetNumChannels(int givenNumChannels) {
+		numChannels = givenNumChannels;
+		channel = Math.min(channel, givenNumChannels + start - 1);
+		previousChannel = Math.min(previousChannel, start + numChannels - 1);
+	}
+	
+	/**
+	 * Returns a string representing the current channel and volume in the form "Channel x Volume y%",
+	 * where x is the current channel and y is the volume, multiplied by 100 and rounded to the nearest integer.
+	 * @return channelVolumeString - string for current channel and volume
+	 */
+	public String display(){
+		String channelVolumeString = "Channel " + String.valueOf(channel) + " Volume " + String.valueOf(Math.round(volume * 100)) + "%";
+		return channelVolumeString;
+	}
+	
+}

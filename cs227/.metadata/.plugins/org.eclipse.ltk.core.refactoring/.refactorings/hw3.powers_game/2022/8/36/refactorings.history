@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;hw3.powersgame&apos; to &apos;powersgame&apos;&#x0D;&#x0A;- Original project: &apos;hw3.powersgame&apos;&#x0D;&#x0A;- Original element: &apos;hw3.powersgame/src/hw3.powersgame&apos;&#x0D;&#x0A;- Renamed element: &apos;hw3.powersgame/src/powersgame&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;hw3.powersgame&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;hw3.powersgame" name="powersgame" qualified="false" references="true" stamp="1661867777696" textual="false" version="1.0"/>
+</session>

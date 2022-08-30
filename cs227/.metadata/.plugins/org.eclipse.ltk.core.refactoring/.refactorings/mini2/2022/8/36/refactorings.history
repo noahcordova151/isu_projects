@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;JustAnOrdinArrayDay.java&apos; to &apos;mini2.array_problems/src/array_problems&apos;&#x0D;&#x0A;- Original project: &apos;mini2&apos;&#x0D;&#x0A;- Destination element: &apos;mini2.array_problems/src/array_problems&apos;&#x0D;&#x0A;- Original element: &apos;JustAnOrdinArrayDay.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move file" destination="=mini2.array_problems/src&lt;array_problems" element1="JustAnOrdinArrayDay.java" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1661869978960" units="0" version="1.0"/>
+</session>
