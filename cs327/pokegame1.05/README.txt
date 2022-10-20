@@ -16,14 +16,18 @@ User commands are as follows:
     '4', 'h'        Attempt to move PC one cell to the left
     '5', ' ', '.'   Rest for a turn (NPC's still move)
     '>'             Attempt to enter a building. 
-                    Works only if standing on a building. Leads to a user interface for the appropriate building.
+                    Works only if standing on a building. 
+                    Leads to a user interface for the appropriate building.
                     Exit with '<'.
     '>'             When in a building interface, exit to map. 
-    't'             Display a list of trainers on the map, with their symbol and position relative to the PC (e.g. “r, 2 north, 14 west”).
+    't'             Display a list of trainers on the map, with symbol and position relative to PC 
+                    (e.g. “r, 2 north, 14 west”).
                     Scroll list (if applicable) with Up Arrow and Down Arrow.
                     Return to map with 'esc'.
-    Up Arrow        When displaying trainer list, if entire list does not fit in screen and not currently at top of list, scroll list up.
-    Down Arrow      When displaying trainer list, if entire list does not fit in screen and not currently at bottom of list, scroll list down.
+    Up Arrow        When displaying trainer list, if entire list does not fit in screen 
+                    and not currently at top of list, scroll list up.
+    Down Arrow      When displaying trainer list, if entire list does not fit in screen 
+                    and not currently at bottom of list, scroll list down.
     'esc'           When displaying trainer list, return to map.
     'q'             Quit the game.  
     --------------------------------------------------------------
