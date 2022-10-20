@@ -3,6 +3,7 @@ Program to create a Pokemon-esque game.
 This iteration of the game implements a user interface that takes (unbuffered) input to move the pc around the current map.
 The game iterates in "turns" dictated by each pc move.
 The game continues until a quit command is received.
+
 User commands are as follows:
     Input           Action
     --------------------------------------------------------------
