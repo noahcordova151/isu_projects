@@ -1,6 +1,6 @@
 Program to create a Pokemon-esque game.
 
-This iteration of the game implements a user interface that takes (unbuffered) input to move the pc around the current map.
+The game implements a user interface that takes (unbuffered) input to move the pc ('@') around the current map.
 The game iterates in "turns" dictated by each pc move.
 The game continues until a quit command is received.
 
@@ -21,6 +21,8 @@ User commands are as follows:
                     Leads to a user interface for the appropriate building.
                     Exit with '<'.
     '>'             When in a building interface, exit to map. 
+    'f'             Fly to a specified map in the world, range: [-200,200]x[-200,200].
+    'b'             Access pc's bag. Items include pokeballs, potions, and revives.
     't'             Display a list of trainers on the map, with symbol and position relative to PC 
                     (e.g. “r, 2 north, 14 west”).
                     Scroll list (if applicable) with Up Arrow and Down Arrow.
@@ -33,7 +35,6 @@ User commands are as follows:
     'q'             Quit the game.  
     --------------------------------------------------------------
 
-Makefile: Run...
-    make clean
+Makefile run...
     make 
     ./poke327
